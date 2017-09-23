@@ -1,0 +1,9 @@
+
+/.idea/
+/junit5.iml
+/target/
+/.classpath
+/.project
+/.settings
+/.gradle
+/build
