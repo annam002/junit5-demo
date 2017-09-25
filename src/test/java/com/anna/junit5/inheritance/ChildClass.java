@@ -6,7 +6,7 @@ class ChildClass extends BaseClass {
 
     @BeforeEach
     void beforeEachChild() {
-        System.out.println("This is the child class");
+        System.out.println("@BeforeEach in child class");
     }
 
     @Override

@@ -14,7 +14,7 @@ public interface ATestInterface {
 
     @BeforeEach
     default void beforeAll() {
-        System.out.println("This is the interface");
+        System.out.println("@BeforeEach in interface");
     }
 
     @Test

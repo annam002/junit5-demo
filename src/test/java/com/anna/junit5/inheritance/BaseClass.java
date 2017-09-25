@@ -9,7 +9,7 @@ abstract class BaseClass implements ATestInterface {
 
     @BeforeEach
     void beforeEach() {
-        System.out.println("This is the base class");
+        System.out.println("@BeforeEach in base class");
     }
 
     @Test
