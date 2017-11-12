@@ -9,7 +9,6 @@ import com.anna.junit5.Bidding.BidGenerator;
 /**
  * - Nested functionality to express grouping relation between tests
  * - @BeforeAll/@AfterAll and @BeforeEach/@AfterEach of parent classes executed for nested classes
- * - @BeforeAll/@AfterAll only works for nested claases when TestInstance is set to Lifecycle.PER_CLASS
  */
 class NestedClassTest {
     private BidGenerator bidGenerator;
@@ -46,13 +45,7 @@ class NestedClassTest {
         }
 
         @Nested
-        @TestInstance(TestInstance.Lifecycle.PER_CLASS)
         class AfterCallingNextBidTwice {
-
-            @BeforeAll
-            void initAll() {
-                theInt = 41;
-            }
 
             @BeforeEach
             void callNextBid() {
@@ -62,7 +55,7 @@ class NestedClassTest {
             @Test
             void thirdBidIs22() {
                 assertEquals(22, bidGenerator.getNextBid());
-                assertEquals(41, theInt);
+                assertEquals(42, theInt);
             }
 
         }
