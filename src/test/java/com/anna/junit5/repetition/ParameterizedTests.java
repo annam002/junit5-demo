@@ -33,7 +33,8 @@ class ParameterizedTests {
     @ParameterizedTest
     @EnumSource(Suit.class)
     void testWithEnumSource(Suit suit) {
-        assertNotNull(suit);
+        assertTrue(suit.getSuitValue() > 8);
+        assertTrue(suit.getSuitValue() < 13);
     }
 
     @Test
