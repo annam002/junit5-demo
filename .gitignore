@@ -7,3 +7,5 @@
 /.settings
 /.gradle
 /build
+.vscode/settings.json
+.factorypath
