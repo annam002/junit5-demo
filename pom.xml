@@ -115,9 +115,7 @@
                         <include>**/*Tests.java</include>
                         <include>**/*TestCase.java</include>
                     </includes>
-                    <properties>
-                        <excludeTags>failureIntended</excludeTags>
-                    </properties>
+                    <excludedGroups>failureIntended</excludedGroups>
                 </configuration>
             </plugin>
         </plugins>
