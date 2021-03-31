@@ -13,7 +13,7 @@
         <junit-platform-version>1.5.2</junit-platform-version>
         <junit-vintage-version>5.5.2</junit-vintage-version>
         <lombok-version>1.18.10</lombok-version>
-        <guava-version>28.1-jre</guava-version>
+        <guava-version>29.0-jre</guava-version>
         <mockito-version>3.2.4</mockito-version>
     </properties>
 
